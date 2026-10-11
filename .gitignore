@@ -1,0 +1,7 @@
+.env*
+!.env.local.example
+node_modules/
+.next/
+*.tar.gz
+backups/
+.DS_Store

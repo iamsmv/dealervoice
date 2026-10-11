@@ -1,0 +1,10 @@
+{
+  "start": "{{ DateTime.fromISO($json.body.start_time, { zone: 'Asia/Kolkata' }).toUTC().toISO() }}",
+  "eventTypeId": 7354937,
+  "attendee": {
+    "name": "{{ $json.body.name }}",
+    "email": "{{ $json.body.email }}",
+    "timeZone": "Asia/Kolkata",
+    "phoneNumber": "{{ $json.body.phone }}"
+  }
+}
